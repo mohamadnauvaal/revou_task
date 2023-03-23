@@ -1,0 +1,157 @@
+body{
+    margin:0;
+    font-family: 'Poppins', sans-serif;
+    background: #f8f8f8;
+    padding-bottom: 20px;
+}
+/* menghilangkan dot pada radio button */
+.hidden-input{
+    position: absolute;
+  left: -9999px;
+}
+
+.col-2{
+    width: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.content{
+    padding: 0 15px;
+    margin: 0 80px;
+}
+
+h2{
+    margin:0;
+    margin-bottom: 5px;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.shape {
+    position: relative;
+    overflow: hidden;
+    height: 200px;
+  }
+.shape::before {
+    border-radius: 100%;
+    position: absolute;
+    background: #4995EF;
+    right: -1200px;
+    left: -1200px;
+    top: -800px;
+    content: '';
+    bottom: 0;
+  }
+
+.header{
+    padding: 80px 15px;
+    display:flex;
+    color: white;
+}
+.banner-hero{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    width: 45%;
+}
+.banner-hero img{
+    width:100%;
+}
+.wording-1{
+    width: 70%;
+    text-align:justify;
+    font-size: 15px;
+    font-weight: 500;
+}
+p.label-form{
+    margin-top: 15px ;
+    margin-bottom: 5px ;
+    font-weight: 800;
+    font-size: 14px;
+}
+
+.sec-kalkulator{
+    width: 50%;
+    margin: 10px 0;
+    padding: 15px 2em;
+}
+
+.form-group{
+    margin-bottom: 1rem;
+}
+
+input.form{
+    border-radius: 6px;
+    border: 1px solid rgb(206, 212, 218);
+    min-height: 42px;
+    font-size: 16px;
+    width: 100%;
+    padding: 0 16px;
+    font-family: 'Poppins', sans-serif;
+}
+.validasi{
+    display: flex;
+    justify-content: center;
+}
+button{
+    background: #2d87f3;
+    color: white;
+    border: 1px solid #2d87f3;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    padding: 9px 24px;
+    border-radius: 6px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+button:hover{
+    background: #2c74df;
+}
+
+div.hasil{
+    background:white;
+    text-align: center;
+    padding: 20px;
+    border-radius: 6px;
+}
+.hasil p{
+    font-weight: 500;
+}
+p.angka-berat{
+    font-size: 50px;
+    margin:10px 0;
+    font-weight: 700;
+}
+.sec-hasil{
+    margin: 20px 0;
+    width:50%;
+}
+
+.form-group-jk{
+    display: flex;
+    gap: 15px;
+}
+
+label.jenis-kelamin{
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    display:flex;
+    justify-content: center;
+    box-shadow: rgb(40 74 117 / 8%) 0px 5px 12px;
+    width:40%;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+label img{
+    margin-bottom: 10px;
+}
+input[type="radio"]:checked+label { 
+    border: 1px solid #2fabf5; 
+    color: #4995EF;
+}
+

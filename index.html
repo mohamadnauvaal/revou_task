@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <!-- FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap" rel="stylesheet">
+    <title>Kalkulator BMI</title>
+</head>
+<body>
+    <div class="header shape">
+        <div class="col-2">
+            <div class="wording-1">
+                <h2>Kalkulator BMI</h2>
+                <span>Berat badan ideal adalah impian semua orang. Tidak hanya memliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaiman denganmu? Yuk, hitung sekarang di Kalkulator BMI.</span>
+            </div>
+        </div>
+        <div class="col-2">
+            <div class="banner-hero">
+                <img class="banner-hero" src="assets/toolsIconBmi.svg">
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="sec-kalkulator">
+            <div id="form-calculator">
+                <div class="form-group">
+                    <p class="label-form">Jenis Kelamin</p>
+                    <div class="form-group-jk">
+                        <input type="radio" class="hidden-input" id="pria" required name="gender" value="p">
+                        <label for="pria" class="jenis-kelamin">
+                            <!-- <div class="radio-image"> -->
+                                <img src="assets/maleIcon.svg">
+                                <span><b>Laki-laki</b></span>
+                            <!-- </div> -->
+                        </label>
+                        <input type="radio" class="hidden-input" id="wanita" required name="gender" value="w">
+                        <label for="wanita" class="jenis-kelamin">
+                            <!-- <div class="radio-image"> -->
+                                <img src="assets/femaleIcon.svg">
+                                <span><b>Wanita</b></span>
+                            <!-- </div> -->
+                        </label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <p class="label-form">Berat Badan (kg)</p>
+                    <input type="number" class="form" id="weight" required placeholder="Berat Badan" name="berat-badan">
+                </div>
+                <div class="form-group">
+                    <p class="label-form">Usia</p>
+                    <input type="number" class="form" id="usia" required placeholder="Usia" name="usia">
+                </div>
+                <div class="form-group">
+                    <p class="label-form">Tinggi Badan (cm)</p>
+                    <input type="number" class="form" id="height" required placeholder="Tinggi Badan" name="tinggi-badan">
+                </div>
+                <div class="validasi">
+                    <button id="calculate" class="button">Hitung BMI</button>
+                    <button id="reset" type="reset" onClick="reset()" class="button">Reset</button>
+                </div>
+            </div>
+        </div>
+        <div class="sec-deskripsi">
+            <h3>Keunggulan fitur</h3>
+            <div class="wording-1">
+                <ul>
+                    <li>Menghitung berat badan</li>
+                    <li>Menentukan kategori berat badan ideal atau tidak</li>
+                    <li>Mempersiapkan program penurunan berat badan</li>
+                </ul>
+                <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain konsultasi dengan orang yang memenuhi syarat seperti dokter</p>
+                <p>Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain konsultasi dengan orang yang memenuhi syarat seperti dokter</p>
+            </div>
+        </div>
+        <div class="sec-hasil">
+            <h3>Hasil</h3>
+            <div class="hasil">
+                <p class="angka-berat" id="result"></p>
+                <p id="category"></p>
+            </div>
+        </div>
+    </div>
+    <!-- JS -->
+    <script src="js/index.js"></script>
+</body>
+</html>
